@@ -1,4 +1,9 @@
 {% extends "base_generic.html" %}
+{% load static %}
+{% block extrastyle %}{{ block.super }}
+<link rel="stylesheet" href='{% static "css/login.css" %}'> {{ form.media }}
+ {% endblock %}
+{% block bodyclass %}{{ block.super }} login{% endblock %}
 
 {% block content %}
 
