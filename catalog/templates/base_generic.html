@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   {% load static %}
+  {% comment %}
   <link rel="stylesheet" href='{% block stylesheet %}{% static "css/django_admin/base.css" %}{% endblock %}'>
+  {% endcomment %}
 
   {% block title %}<title>Local Library</title>{% endblock %}
   <meta charset="utf-8">
