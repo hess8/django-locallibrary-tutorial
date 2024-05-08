@@ -1,4 +1,14 @@
 {% extends "base_generic.html" %}
+{% load static %}
+
+  {% comment %}{% endcomment %}
+
+{% comment %} {% endcomment %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static "django_admin/login.css" %}">
+{% comment %} block above does nothing so far {% endcomment %}
+{{ form.media }}
+{% endblock %}
+
 
 {% block content %}
 
